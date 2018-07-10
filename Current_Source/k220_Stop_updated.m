@@ -11,4 +11,4 @@ function k220_Stop_updated(k220)
 
 %% Función para desactivar el output de la fuente.
 str = 'F0T4X\n'; %%% Funciona también 'F0T5X\n
-query(k220,str)
+query(k220.ObjHandle,str)

@@ -18,4 +18,4 @@ if Ivalue > k220.Imax.Value
     error('Maximum current value exceeded, select Ivalue values below 0.005 A');
 end
 str = strcat('I',num2str(Ivalue),'X','\n');
-query(k220,str)
+query(k220.ObjHandle,str)
