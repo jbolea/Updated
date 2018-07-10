@@ -48,7 +48,7 @@ end
 
 %fprintf(dsa,'ID?');
 %device=fscanf(dsa)%devuelve HP3562A. Permite comprobar si estamos leyendo el 
-device = query(dsa,'ID?');%esta instruccion es más directa.
+device = query(dsa.ObjHandle,'ID?');%esta instruccion es más directa.
 if ~strcmpi('HP3562A',device(1:7))
     return;
 end %dispositivo correcto?

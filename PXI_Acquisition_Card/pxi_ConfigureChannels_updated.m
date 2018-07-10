@@ -30,5 +30,5 @@ end
 ProbeAttenuation = pxi.ConfStructs.Vertical.ProbeAttenuation;
 Enabled = pxi.ConfStructs.Vertical.Enabled;
 
-invoke(pxi.configurationfunctionsvertical,...
+invoke(pxi.ObjHandle.configurationfunctionsvertical,...
     'configurevertical',ChannelList,Range,offset,Coupling,ProbeAttenuation,Enabled)
